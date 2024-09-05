@@ -1,0 +1,25 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<a [routerLink]="['/page1']">
+  Send Message
+</a> &nbsp;&nbsp;&nbsp;
+<a [routerLink]="['/page2']">
+  Display Messages
+</a>
+<br/>
+<br/>
+<router-outlet></router-outlet>
+
+
+<button (click)="pushSampleData()">Push Sample Data</button>
+<div slimScroll [options]="opts" [scrollEvents]="scrollEvents" style="height:300px;">
+ <ul>
+  <li *ngFor="let s of sampleData">{{s}}</li>
+ </ul>
+</div>
